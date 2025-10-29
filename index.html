@@ -103,6 +103,72 @@
       gap: 16px;
     }
     
+/* Footer */
+footer {
+  background: var(--gradient-1);
+  color: white;
+  padding: 32px 24px;
+  margin-top: 48px;
+  box-shadow: var(--shadow-lg);
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  text-align: center;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-bottom {
+  max-width: 1400px;
+  margin: 32px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  footer {
+    padding: 24px 16px;
+    margin-top: 32px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .footer-section p {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    margin-top: 24px;
+    padding-top: 20px;
+    font-size: 0.85rem;
+  }
+}
     .logo-container img {
       height: 110px;
       border-radius: 12px;
@@ -1006,6 +1072,26 @@
       <iframe id="pdfIframe"></iframe>
     </div>
   </div>
+
+<footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>📞 İletişim</h3>
+        <p>Ankara Büyükşehir Belediyesi<br>İtfaiye Dairesi Başkanlığı<br>+90 312 507 4800<br>Acil: 112</p>
+      </div>
+      <div class="footer-section">
+        <h3>🚒 Ankara İtfaiyesinde</h3>
+        <p>1534 Personel 👨‍🚒<br>297 Araç 🚒<br>49 İstasyon 🏣</p>
+      </div>
+      <div class="footer-section">
+        <h3>⚠️ Önemli Not</h3>
+        <p>Bu Sayfada Bulunan kılavuzlar sadece<br>bilgi amaçlıdır. Araç kullanımında<br>resmi eğitim şarttır.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 Ankara Büyükşehir Belediyesi İtfaiye Dairesi Başkanlığı - Tüm Hakları Saklıdır
+    </div>
+  </footer>
 
   <script>
     const themeToggle = document.getElementById('themeToggle');
